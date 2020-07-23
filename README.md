@@ -2,7 +2,7 @@
 
 ## Demo
 
-https://asiameus.github.io/currency-converter/
+https://asiameus.github.io/currency-converter-react/
 
 ## Description
 
