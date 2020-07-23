@@ -1,0 +1,10 @@
+.result {
+  font-size: 24px;
+  font-weight: 700;
+  padding: 10px;
+}
+
+.result__footer {
+  font-size: 12px;
+  padding: 10px;
+}
