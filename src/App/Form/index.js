@@ -54,7 +54,7 @@ export const Form = ({ calculateResult, result }) => {
       </p>
       <Result result={result} />
       <p className="form__info">
-        Wg średnich kursów z dnia 19.06.2020, za: npb.pl
+        Wg średnich kursów z dnia 17.08.2020, za: npb.pl
       </p>
       <p className="form__footer">
         © Asia Meuś 2020
