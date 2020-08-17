@@ -11,10 +11,18 @@
 .form__label {
   font-size: 18px;
   width: 100%;
-  max-width: 240px;
   padding: 10px;
-  display: inline-block;
-  margin-bottom: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+@media (max-width: 767px) {
+  .form__labelText {
+    flex-basis: 100%;
+    margin-bottom: 20px;
+  }
 }
 
 .form__field {
@@ -22,9 +30,13 @@
   background-color: transparent;
   border: 1.5px solid #1e6c99;
   padding: 10px;
-  width: 100%;
-  max-width: 170px;
-  margin-left: 10px;
+  flex-basis: 200px;
+}
+
+@media (max-width: 767px) {
+  .form__field {
+    flex-basis: 100%;
+  }
 }
 
 .form__button {

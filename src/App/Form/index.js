@@ -18,35 +18,41 @@ export const Form = ({ calculateResult, result }) => {
         Konwerter walut
       </h1>
       <p className="form__section">
-        <label className="form__label" for="amount">Wpisz kwotę w PLN</label>
-        <input
-          value={amount}
-          onChange={({ target }) => setAmount(target.value)}
-          className="form__field"
-          name="amount"
-          type="number"
-          min="0.01"
-          step="0.01"
-          required
-        />
+        <label className="form__label">
+          <span className="form__labelText">
+            Wpisz kwotę w PLN
+          </span>
+          <input
+            value={amount}
+            onChange={({ target }) => setAmount(target.value)}
+            className="form__field"
+            type="number"
+            min="0.01"
+            step="0.01"
+            required
+          />
+        </label>
       </p>
       <p className="form__section">
-        <label className="form__label" for="currency">Wybierz docelową walutę</label>
-        <select
-          value={currency}
-          onChange={({ target }) => setCurrency(target.value)}
-          className="form__field"
-          name="currency"
-        >
-          {currencies.map((currency => (
-            <option
-              key={currency.short}
-              value={currency.short}
-            >
-              {currency.name}
-            </option>
-          )))}
-        </select>
+        <label className="form__label">
+          <span className="form__labelText">
+            Wybierz docelową walutę
+          </span>
+          <select
+            value={currency}
+            onChange={({ target }) => setCurrency(target.value)}
+            className="form__field"
+          >
+            {currencies.map((currency => (
+              <option
+                key={currency.short}
+                value={currency.short}
+              >
+                {currency.name}
+              </option>
+            )))}
+          </select>
+        </label>
       </p>
       <p>
         <button className="form__button">Przelicz</button>
